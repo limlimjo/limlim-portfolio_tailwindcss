@@ -236,15 +236,17 @@
         <script>
             // 다크 모드 아이콘
             const darkModeToggleIcon = document.getElementById('darkModeToggle').querySelector('i');
-
+            const darkModeToggleMobileIcon = document.getElementById('darkModeToggleMobile').querySelector('i');
             // 다크 모드 초기화 함수
             function initialTheme() {
                 if (localStorage.theme === 'dark') {
                     document.documentElement.classList.add('dark');
                     darkModeToggleIcon.className = 'fas fa-sun text-yellow-400';
+                    darkModeToggleMobileIcon.className = 'fas fa-sun text-yellow-400';
                 } else {
                     document.documentElement.classList.remove('dark');
                     darkModeToggleIcon.className = 'fas fa-moon text-gray-700';
+                    darkModeToggleMobileIcon.className = 'fas fa-moon text-gray-700';
                 }
             }
 
@@ -254,14 +256,17 @@
                     document.documentElement.classList.remove('dark');
                     localStorage.theme = 'light';
                     darkModeToggleIcon.className = 'fas fa-moon text-gray-700';
+                    darkModeToggleMobileIcon.className = 'fas fa-moon text-gray-700';
                 } else {
                     document.documentElement.classList.add('dark');
                     localStorage.theme = 'dark';
                     darkModeToggleIcon.className = 'fas fa-sun text-yellow-400';
+                    darkModeToggleMobileIcon.className = 'fas fa-sun text-yellow-400';
                 }
             }
 
             document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+            document.getElementById('darkModeToggleMobile').addEventListener('click', toggleDarkMode);
 
             // 모바일 메뉴 열기
             const mobileMenu = document.getElementById('mobileMenu');
