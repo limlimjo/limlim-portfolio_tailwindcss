@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='ko'>
+<html lang='ko' class="dark">
 
     <head>
         <meta charset='UTF-8'>
@@ -7,14 +7,19 @@
         <title>개발자 포트폴리오</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
         <script src='https://cdn.tailwindcss.com'></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'selector',
+            };
+        </script>
     </head>
 
-    <body>
+    <body class="dark:bg-gray-900 dark:text-white bg-white text-black min-h-screen transition-colors duration-300">
         <header class="sticky top-0 bg-opacity-90 backdrop-blur-lg">
             <nav class="container max-w-4xl mx-auto px-6 py-3 flex justify-between items-center">
                 <div class="flex items-center space-x-4">
                     <h1 class="text-2xl font-bold">LIMLIM</h1>
-                    <p class="text-sm text-gray-500">풀스택 개발자</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-300">풀스택 개발자</p>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <a href="#home" class="hover:text-blue-500 transition-colors">홈</a>
@@ -23,8 +28,8 @@
                     <a href="#projects" class="hover:text-blue-500 transition-colors">프로젝트</a>
                     <a href="#contact" class="hover:text-blue-500 transition-colors">연락처</a>
                     <button
-                        class="p-2 w-10 h-10 rounded-full bg-gray-200 focus:outline-none focus:ring focus:ring-blue-500">
-                        <i class="fas fa-moon text-gray-700"></i>
+                        class="p-2 w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-500">
+                        <i class="fas fa-moon text-gray-700 dark:text-yellow-400"></i>
                     </button>
                 </div>
             </nav>
@@ -39,7 +44,7 @@
                 <div class="text-right">
                     <h1 class="text-4xl font-bold mb-2">limlimJo</h1>
                     <p class="text-xl mb-4">성장하는 개발자</p>
-                    <p class="tex-gray-600">
+                    <p class="text-gray-600 dark:text-gray-400">
                         새로운 기술을 습득하는 것을 좋아합니다.
                     </p>
                 </div>
@@ -49,18 +54,18 @@
                 <h2 class="text-3xl font-bold mb-6">소개</h2>
                 <div class="grid grid-cols-2 gap-6">
                     <article
-                        class="bg-gray-100 shadow-md rounded-lg p-6 hover:scale-105 transition-transform duration-300">
+                        class="bg-gray-100 dark:bg-gray-800 shadow-md rounded-lg p-6 hover:scale-105 transition-transform duration-300">
                         <h3 class="text-xl font-semibold mb-4">🎓 교육 및 활동</h3>
-                        <ul class="text-gray-800 leading-relaxed">
+                        <ul class="text-gray-800 dark:text-gray-300 leading-relaxed">
                             <li>✏️ 2024 테오 스프린트 18기 참여</li>
                             <li>✏️ 2023-2024 egovframe 오픈소스 컨트리뷰션 참여</li>
                             <li>✏️ 2022 항해99 부트캠프 수료 (Node.js)</li>
                         </ul>
                     </article>
                     <article
-                        class="bg-gray-100 shadow-md rounded-lg p-6 hover:scale-105 transition-transform duration-300">
+                        class="bg-gray-100 dark:bg-gray-800 shadow-md rounded-lg p-6 hover:scale-105 transition-transform duration-300">
                         <h3 class="text-xl font-semibold mb-4">💻 자격증</h3>
-                        <ul class="text-gray-800 leading-relaxed">
+                        <ul class="text-gray-800 dark:text-gray-300 leading-relaxed">
                             <li>✏️ 2023 정보처리기사</li>
                             <li>✏️ 2023 SQL 개발자</li>
                         </ul>
@@ -72,27 +77,27 @@
                 <h2 class="text-3xl font-bold mb-6">기술</h2>
                 <div class="grid grid-cols-3 gap-4">
                     <div
-                        class="flex flex-col items-center bg-gray-100 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+                        class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
                         <i class="fa-brands fa-html5 text-4xl text-red-500 mb-1"></i>
                         <h3 class="text-lg font-semibold">HTML5</h3>
                     </div>
                     <div
-                        class="flex flex-col items-center bg-gray-100 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+                        class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
                         <i class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-1"></i>
                         <h3 class="text-lg font-semibold">CSS</h3>
                     </div>
                     <div
-                        class="flex flex-col items-center bg-gray-100 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+                        class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
                         <i class="fa-brands fa-js text-4xl text-yellow-500 mb-1"></i>
                         <h3 class="text-lg font-semibold">JavaScript</h3>
                     </div>
                     <div
-                        class="flex flex-col items-center bg-gray-100 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+                        class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
                         <i class="fa-brands fa-node-js text-4xl text-green-400 mb-1"></i>
                         <h3 class="text-lg font-semibold">Node.js</h3>
                     </div>
                     <div
-                        class="flex flex-col items-center bg-gray-100 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+                        class="flex flex-col items-center bg-gray-100 dark:bg-gray-800 shadow-md rounded-lg p-4 hover:scale-105 transition-transform duration-300">
                         <i class="fa-brands fa-java text-4xl text-red-500 mb-1"></i>
                         <h3 class="text-lg font-semibold">JAVA</h3>
                     </div>
@@ -110,51 +115,53 @@
                 <div class="grid grid-cols-2 gap-6">
                     <!-- 아래 article 부분은 나중에 진행한 프로젝트로 수정하기 -->
                     <article
-                        class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+                        class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
                         <img class="w-full h-48 object-cover"
                             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600"
                             alt="전자상거래 플랫폼 이미지">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
                                 전자상거래 플랫폼
                             </h3>
                             <div class="space-x-2 mb-4">
                                 <span
-                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border border-gray-300">
+                                    class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-0.5 rounded-md text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600">
                                     React
                                 </span>
                                 <span
-                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border border-gray-300">
+                                    class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-0.5 rounded-md text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600">
                                     Node.js
                                 </span>
                             </div>
                             <div class="flex justify-start space-x-2">
-                                <a href="#" class="text-sm bg-gray-800 text-white px-3 py-1 rounded-md">GitHub</a>
+                                <a href="#"
+                                    class="text-sm bg-gray-800 dark:bg-gray-300 text-white dark:text-gray-800 px-3 py-1 rounded-md">GitHub</a>
                                 <a href="#" class="text-sm bg-blue-600 text-white px-3 py-1 rounded-md">라이브 데모</a>
                             </div>
                         </div>
                     </article>
                     <article
-                        class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+                        class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
                         <img class="w-full h-48 object-cover"
                             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600"
                             alt="전자상거래 플랫폼 이미지">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
                                 전자상거래 플랫폼
                             </h3>
                             <div class="space-x-2 mb-4">
                                 <span
-                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border border-gray-300">
+                                    class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-0.5 rounded-md text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600">
                                     React
                                 </span>
                                 <span
-                                    class="bg-gray-200 text-xs px-2 py-0.5 rounded-md text-gray-700 border border-gray-300">
+                                    class="bg-gray-200 dark:bg-gray-700 text-xs px-2 py-0.5 rounded-md text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600">
                                     Node.js
                                 </span>
                             </div>
                             <div class="flex justify-start space-x-2">
-                                <a href="#" class="text-sm bg-gray-800 text-white px-3 py-1 rounded-md">GitHub</a>
+                                <a href="#"
+                                    class="text-sm bg-gray-800 dark:bg-gray-300 text-white dark:text-gray-800 px-3 py-1 rounded-md">GitHub</a>
                                 <a href="#" class="text-sm bg-blue-600 text-white px-3 py-1 rounded-md">라이브 데모</a>
                             </div>
                         </div>
@@ -169,18 +176,17 @@
                         <div>
                             <label for="name" class="block mb-1 font-medium">이름</label>
                             <input type="text" id="name" name="name" required
-                                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-500" />
+                                class="dark:bg-gray-700 dark:border-gray-600 dark:text-white w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-500" />
                         </div>
                         <div>
                             <label for="email" class="block mb-1 font-medium">이메일</label>
                             <input type="email" id="email" name="email" required
-                                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-500" />
+                                class="dark:bg-gray-700 dark:border-gray-600 dark:text-white w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-500" />
                         </div>
                         <div>
                             <label for="message" class="block mb-1 font-medium">메시지</label>
                             <textarea type="text" id="message" name="message" required
-                                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-500">
-                            </textarea>
+                                class="dark:bg-gray-700 dark:border-gray-600 dark:text-white w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-500"></textarea>
                         </div>
                         <button type="submit"
                             class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-500 transition-colors">
@@ -189,12 +195,12 @@
                     </form>
                     <div class="flex flex-col items-center justify-center gap-y-4">
                         <a href="#" target="_blank"
-                            class="flex items-center space-x-2 text-gray-600 hover:text-blue-500 transition-colors">
+                            class="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">
                             <i class="fa-brands fa-github"></i>
                             <span>GitHub</span>
                         </a>
                         <a href="#" target="_blank"
-                            class="flex items-center space-x-2 text-gray-600 hover:text-blue-500 transition-colors">
+                            class="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">
                             <i class="fa-regular fa-envelope"></i>
                             <span>jselim234@gmail.com</span>
                         </a>
@@ -202,7 +208,7 @@
                 </div>
             </section>
         </main>
-        <footer class="bg-gray-100 py-6">
+        <footer class="bg-gray-100 dark:bg-gray-800 py-6">
             <div class="container max-w-4xl mx-auto px-6 text-center">
                 <p>&copy; 2024 LIMLIM. All rights reserved.</p>
             </div>
